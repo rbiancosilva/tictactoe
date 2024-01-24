@@ -1,0 +1,1 @@
+01/23/2024 - This is a simple C code for a tic tac toe game. It uses loops and a single array to make the game work. At the momento you can only play against other player or against yourself, but I intend to make it playable against the computer in a near future.
