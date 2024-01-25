@@ -5,12 +5,32 @@
 int table(int n[9]){
 	for(int j=0; j<9; j++){ 
 		if(j%3==0 && j!=0){
-			printf("\n");
-			printf("----------\n%d | ", n[j]);
+			if(n[j]==11){
+				printf("\n");
+				printf("----------\nX | ");
+			}else if(n[j]==22){
+				printf("\n");
+				printf("----------\nO | ");
+			}else{
+				printf("\n");
+				printf("----------\n%d | ", n[j]);
+			}	
 		}else if(j!=2 && j!=5 && j!=8){
-			printf("%d | ", n[j]);
+			if(n[j]==11){
+				printf("X | ");
+			}else if(n[j]==22){
+				printf("O | ");			
+			}else{
+				printf("%d | ", n[j]);
+			}
 		}else{
-			printf("%d", n[j]);
+			if(n[j]==11){
+				printf("X");
+			}else if(n[j]==22){
+				printf("O");			
+			}else{
+				printf("%d", n[j]);
+			}
 		}
 	}
 	return 0;
